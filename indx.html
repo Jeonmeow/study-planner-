@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with light/dark mode toggle -->
+        <header>
+            <button id="toggleMode" class="mode-toggle">🌙</button>
+            <h1>Smart Study Planner</h1>
+        </header>
+<!-- Login Section -->
+    <section class="login" id="loginSection">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+        
+        <!-- Timer Section -->
+        <section class="timer">
+            <h2>Study Timer</h2>
+            <div id="timerDisplay" class="timer-display">25:00</div>
+            <button id="startTimer" class="btn">Start Timer</button>
+        </section>
+        
+        <!-- Task Reminder -->
+        <section class="reminder">
+            <h2>Set a Reminder</h2>
+            <input type="text" id="taskInput" placeholder="What to study?">
+            <button id="setReminder" class="btn">Set Reminder</button>
+            <div id="reminderDisplay" class="reminder-display"></div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section class="calendar">
+            <h2>Study Calendar</h2>
+            <div id="calendar"></div> <!-- Basic Calendar Section -->
+        </section>
+
+
+
+
+
+
+<!-- Taskbar for Subjects & Priorities -->
+    <section class="taskbar">
+        <h2>Subjects & Priority</h2>
+        <div class="taskbar-items">
+            <div class="task-item">
+                <input type="text" placeholder="Subject Name" class="task-input">
+                <select class="priority-select">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <button class="add-task-btn">Add Task</button>
+            </div>
+        </div>
+    </section>v
+ <!-- Weekly Tracker -->
+    <section class="weekly-tracker">
+        <h2>Weekly Study Tracker</h2>
+        <div id="weeklyTracker"></div>
+    </section>
+
+    <!-- Study Motivation Section -->
+    <section class="motivation">
+        <h2>Study Motivation</h2>
+        <p id="quote">"You're doing great! Keep going!"</p>
+    </section>
+
+
+        <footer>
+            <p>Made with 💚 for focused study time.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
